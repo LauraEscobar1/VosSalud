@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VozSalud | Información</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        voz: {
+                            blue: '#2F6685',
+                            lightBlue: '#DCEEF7',
+                            sage: '#DDEDE8',
+                            turquoise: '#68A9A6',
+                            pink: '#F8DDE5',
+                            softPink: '#EFA6BA',
+                            background: '#F8FAFA',
+                            text: '#123B52',
+                            secondary: '#5F7480'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-voz-background text-voz-text font-sans">
+
+    <div class="min-h-screen flex">
+
+        <aside
+            class="sidebar w-64 bg-white border-r border-slate-100 flex flex-col px-5 py-7"
+        >
+
+            <div class="mb-10 px-2">
+
+                <a href="index.html" class="block">
+
+                    <h1 class="text-2xl font-bold text-voz-text">
+                        VozSalud
+                    </h1>
+
+                    <p class="text-xs text-voz-secondary mt-1">
+                        Cuidado y bienestar vocal
+                    </p>
+
+                </a>
+
+            </div>
+
+            <nav class="flex-1">
+
+                <p
+                    class="text-[11px] uppercase tracking-wider font-semibold text-slate-400 px-3 mb-3"
+                >
+                    Menú
+                </p>
+
+                <div class="space-y-2">
+
+                    <a
+                        href="index.html"
+                        class="nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
+                    >
+                        <i data-lucide="calendar-days" class="w-5 h-5"></i>
+                        <span>Calendario</span>
+                    </a>
+
+                    <a
+                        href="habitos.html"
+                        class="nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
+                    >
+                        <i data-lucide="lightbulb" class="w-5 h-5"></i>
+                        <span>Hábitos</span>
+                    </a>
+
+                    <a
+                        href="informacion.html"
+                        class="nav-item active flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
+                    >
+                        <i data-lucide="info" class="w-5 h-5"></i>
+                        <span>Información</span>
+                    </a>
+
+                </div>
+
+            </nav>
+
+        </aside>
+
+
+        <main class="flex-1 min-w-0">
+
+            <div class="max-w-5xl mx-auto px-5 sm:px-8 lg:px-10 py-8 lg:py-10">
+
+                <header class="mb-9">
+
+                    <p
+                        class="text-sm font-medium text-voz-turquoise mb-2"
+                    >
+                        VozSalud
+                    </p>
+
+                    <h2
+                        class="text-3xl sm:text-4xl font-bold tracking-tight text-voz-text"
+                    >
+                        Información
+                    </h2>
+
+                    <p
+                        class="text-sm sm:text-base text-voz-secondary mt-2"
+                    >
+                        Conoce más sobre el cuidado y bienestar de la voz.
+                    </p>
+
+                </header>
+
+
+                <div class="space-y-5">
+
+                    <section
+                        class="bg-white border border-slate-100 rounded-3xl p-7 sm:p-9 shadow-sm"
+                    >
+
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-voz-lightBlue flex items-center justify-center mb-6"
+                        >
+                            <i
+                                data-lucide="heart-pulse"
+                                class="w-7 h-7 text-voz-blue"
+                            ></i>
+                        </div>
+
+                        <h3
+                            class="text-2xl font-bold text-voz-text"
+                        >
+                            Cuidado de la voz
+                        </h3>
+
+                        <p
+                            class="text-sm sm:text-base text-voz-secondary leading-7 mt-4"
+                        >
+                            La higiene vocal comprende diferentes hábitos que
+                            pueden contribuir al cuidado y bienestar de la voz.
+                            Mantener una adecuada hidratación, evitar el
+                            esfuerzo vocal y permitir momentos de descanso son
+                            algunas prácticas importantes.
+                        </p>
+
+                    </section>
+
+
+                    <section
+                        class="bg-voz-sage/60 border border-voz-sage rounded-3xl p-7 sm:p-9"
+                    >
+
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-6"
+                        >
+                            <i
+                                data-lucide="mic"
+                                class="w-7 h-7 text-voz-turquoise"
+                            ></i>
+                        </div>
+
+                        <h3
+                            class="text-2xl font-bold text-voz-text"
+                        >
+                            ¿Por qué cuidar la voz?
+                        </h3>
+
+                        <p
+                            class="text-sm sm:text-base text-voz-secondary leading-7 mt-4"
+                        >
+                            La voz forma parte de nuestra comunicación diaria.
+                            Adoptar hábitos saludables puede ayudar a promover
+                            un uso consciente de la voz y favorecer el bienestar
+                            durante actividades que requieren utilizarla de
+                            manera frecuente.
+                        </p>
+
+                    </section>
+
+
+                    <section
+                        class="bg-voz-pink/60 border border-voz-pink rounded-3xl p-7 sm:p-9"
+                    >
+
+                        <div class="flex gap-4">
+
+                            <div
+                                class="w-11 h-11 shrink-0 rounded-xl bg-white flex items-center justify-center"
+                            >
+                                <i
+                                    data-lucide="triangle-alert"
+                                    class="w-5 h-5 text-voz-blue"
+                                ></i>
+                            </div>
+
+                            <div>
+
+                                <h3
+                                    class="text-lg font-bold text-voz-text"
+                                >
+                                    Importante
+                                </h3>
+
+                                <p
+                                    class="text-sm text-voz-secondary leading-6 mt-2"
+                                >
+                                    Esta aplicación tiene fines educativos y
+                                    no reemplaza la valoración o recomendación
+                                    de un profesional de Fonoaudiología.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
