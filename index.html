@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VozSalud | Calendario</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        voz: {
+                            blue: '#2F6685',
+                            lightBlue: '#DCEEF7',
+                            sage: '#DDEDE8',
+                            turquoise: '#68A9A6',
+                            pink: '#F8DDE5',
+                            softPink: '#EFA6BA',
+                            background: '#F8FAFA',
+                            text: '#123B52',
+                            secondary: '#5F7480'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-voz-background text-voz-text font-sans">
+
+    <div class="min-h-screen flex">
+
+       
+        <aside
+            class="sidebar w-64 bg-white border-r border-slate-100 flex flex-col px-5 py-7"
+        >
+
+            <div class="mb-10 px-2">
+                <a href="index.html" class="block">
+                    <h1 class="text-2xl font-bold tracking-tight text-voz-text">
+                        VozSalud
+                    </h1>
+
+                    <p class="text-xs text-voz-secondary mt-1 leading-relaxed">
+                        Cuidado y bienestar vocal
+                    </p>
+                </a>
+            </div>
+
+            <nav class="flex-1">
+
+                <p
+                    class="text-[11px] uppercase tracking-wider font-semibold text-slate-400 px-3 mb-3"
+                >
+                    Menú
+                </p>
+
+                <div class="space-y-2">
+
+                    <a
+                        href="index.html"
+                        class="nav-item active flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
+                    >
+                        <i data-lucide="calendar-days" class="w-5 h-5"></i>
+                        <span>Calendario</span>
+                    </a>
+
+                    <a
+                        href="habitos.html"
+                        class="nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
+                    >
+                        <i data-lucide="lightbulb" class="w-5 h-5"></i>
+                        <span>Hábitos</span>
+                    </a>
+
+                    <a
+                        href="informacion.html"
+                        class="nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
+                    >
+                        <i data-lucide="info" class="w-5 h-5"></i>
+                        <span>Información</span>
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <div class="pt-5 border-t border-slate-100">
+
+                <div class="flex items-center gap-3 px-2">
+
+                    <div
+                        class="w-9 h-9 rounded-full bg-voz-lightBlue flex items-center justify-center"
+                    >
+                        <i
+                            data-lucide="heart-pulse"
+                            class="w-4 h-4 text-voz-blue"
+                        ></i>
+                    </div>
+
+                    <div>
+                        <p class="text-xs font-semibold text-voz-text">
+                            VozSalud
+                        </p>
+
+                        <p class="text-[11px] text-voz-secondary">
+                            Bienestar vocal
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+     
+        <main class="flex-1 min-w-0">
+
+        
+            <div
+                class="mobile-header hidden bg-white border-b border-slate-100 px-5 py-4"
+            >
+
+                <div class="flex items-center justify-between">
+
+                    <div>
+                        <h1 class="text-xl font-bold text-voz-text">
+                            VozSalud
+                        </h1>
+
+                        <p class="text-xs text-voz-secondary">
+                            Cuidado y bienestar vocal
+                        </p>
+                    </div>
+
+                    <button
+                        id="mobileMenuButton"
+                        type="button"
+                        aria-label="Abrir menú"
+                        class="w-10 h-10 rounded-xl bg-voz-sage flex items-center justify-center"
+                    >
+                        <i data-lucide="menu" class="w-5 h-5"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-8 lg:py-10">
+
+                <header class="mb-8">
+
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
+
+                        <div>
+
+                            <p
+                                class="text-sm font-medium text-voz-turquoise mb-2"
+                            >
+                                Bienestar vocal
+                            </p>
+
+                            <h2
+                                class="text-3xl sm:text-4xl font-bold tracking-tight text-voz-text"
+                            >
+                                Calendario de hábitos
+                            </h2>
+
+                            <p
+                                class="text-sm sm:text-base text-voz-secondary mt-2 max-w-xl"
+                            >
+                                Organiza y acompaña tus hábitos para el cuidado
+                                y bienestar de la voz.
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="today-card bg-white border border-slate-100 rounded-2xl px-5 py-4 shadow-sm"
+                        >
+
+                            <div class="flex items-center gap-3">
+
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-voz-lightBlue flex items-center justify-center"
+                                >
+                                    <i
+                                        data-lucide="calendar-check-2"
+                                        class="w-5 h-5 text-voz-blue"
+                                    ></i>
+                                </div>
+
+                                <div>
+                                    <p
+                                        class="text-[11px] uppercase tracking-wide font-semibold text-slate-400"
+                                    >
+                                        Hoy
+                                    </p>
+
+                                    <p
+                                        id="currentDate"
+                                        class="text-sm font-semibold text-voz-text"
+                                    >
+                                        --
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </header>
+
+
+                
+                <section
+                    class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden"
+                >
+
+                  
+                    <div
+                        class="px-5 sm:px-7 py-5 border-b border-slate-100"
+                    >
+
+                        <div class="flex items-center justify-between gap-4">
+
+                            <button
+                                id="previousMonth"
+                                type="button"
+                                aria-label="Mes anterior"
+                                class="calendar-nav-button"
+                            >
+                                <i
+                                    data-lucide="chevron-left"
+                                    class="w-5 h-5"
+                                ></i>
+                            </button>
+
+
+                            <div class="text-center">
+
+                                <h3
+                                    id="monthTitle"
+                                    class="text-xl sm:text-2xl font-bold text-voz-text"
+                                >
+                                    Septiembre 2026
+                                </h3>
+
+                                <p
+                                    class="text-xs text-voz-secondary mt-1"
+                                >
+                                    Calendario de cuidado vocal
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                id="nextMonth"
+                                type="button"
+                                aria-label="Mes siguiente"
+                                class="calendar-nav-button"
+                            >
+                                <i
+                                    data-lucide="chevron-right"
+                                    class="w-5 h-5"
+                                ></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    
+                    <div
+                        class="calendar-grid px-3 sm:px-6 pt-5"
+                    >
+
+                        <div class="calendar-weekday">Lun</div>
+                        <div class="calendar-weekday">Mar</div>
+                        <div class="calendar-weekday">Mié</div>
+                        <div class="calendar-weekday">Jue</div>
+                        <div class="calendar-weekday">Vie</div>
+                        <div class="calendar-weekday">Sáb</div>
+                        <div class="calendar-weekday">Dom</div>
+
+                    </div>
+
+
+                   
+                    <div
+                        id="calendarDays"
+                        class="calendar-grid px-3 sm:px-6 pb-6 pt-2"
+                    >
+                    </div>
+
+
+            
+                    <div
+                        class="px-5 sm:px-7 py-5 border-t border-slate-100 bg-slate-50/50"
+                    >
+
+                        <div
+                            class="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-voz-secondary"
+                        >
+
+                            <div class="flex items-center gap-2">
+                                <span class="legend-dot completed">
+                                    ✓
+                                </span>
+
+                                <span>Hábito completado</span>
+                            </div>
+
+
+                            <div class="flex items-center gap-2">
+                                <span class="legend-dot current"></span>
+
+                                <span>Día actual</span>
+                            </div>
+
+
+                            <div class="flex items-center gap-2">
+                                <span class="legend-dot pending"></span>
+
+                                <span>Pendiente</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                
+                <section
+                    id="habitPanel"
+                    class="mt-6 bg-white border border-slate-100 rounded-3xl shadow-sm p-6 sm:p-8"
+                >
+
+                    <div
+                        class="flex flex-col sm:flex-row sm:items-center gap-5"
+                    >
+
+                        <div
+                            class="w-14 h-14 shrink-0 rounded-2xl bg-voz-sage flex items-center justify-center"
+                        >
+                            <i
+                                data-lucide="droplets"
+                                class="w-7 h-7 text-voz-turquoise"
+                            ></i>
+                        </div>
+
+                        <div class="flex-1">
+
+                            <p
+                                class="text-xs uppercase tracking-wide font-semibold text-voz-turquoise mb-1"
+                            >
+                                Hábito del día
+                            </p>
+
+                            <h3
+                                id="selectedHabitName"
+                                class="text-xl font-bold text-voz-text"
+                            >
+                                Hidratación
+                            </h3>
+
+                            <p
+                                id="selectedHabitDescription"
+                                class="text-sm text-voz-secondary mt-1"
+                            >
+                                Mantén una adecuada hidratación durante el día
+                                para favorecer el bienestar vocal.
+                            </p>
+
+                        </div>
+
+                        <button
+                            id="completeHabitButton"
+                            type="button"
+                            class="primary-button"
+                        >
+                            <i
+                                data-lucide="check"
+                                class="w-4 h-4"
+                            ></i>
+
+                            <span>Marcar como realizado</span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/habitos.js"></script>
+    <script src="js/idiomas.js"></script>
+    <script src="js/calendario.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
