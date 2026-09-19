@@ -1,21 +1,41 @@
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-        const mobileMenuButton =
-            document.getElementById("mobileMenuButton");
+    const menuButton =
+        document.getElementById("mobileMenuButton");
 
-        if (mobileMenuButton) {
+    const sidebar =
+        document.getElementById("sidebar");
 
-            mobileMenuButton.addEventListener(
-                "click",
-                () => {
-                    alert(
-                        "El menú móvil se implementará en la siguiente etapa."
-                    );
-                }
-            );
-        }
+    if (menuButton && sidebar) {
+
+        menuButton.addEventListener(
+            "click",
+            () => {
+
+                sidebar.classList.toggle(
+                    "mobile-sidebar-open"
+                );
+
+            }
+        );
+
+        document
+            .querySelectorAll(".nav-item")
+            .forEach(item => {
+
+                item.addEventListener(
+                    "click",
+                    () => {
+
+                        sidebar.classList.remove(
+                            "mobile-sidebar-open"
+                        );
+
+                    }
+                );
+
+            });
 
     }
-);
+
+});
