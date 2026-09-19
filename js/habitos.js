@@ -8,20 +8,20 @@ const habits = [
         icono: "droplets",
         color: "blue",
         resumen: {
-            es: "Mantén una adecuada hidratación durante el día.",
-            en: "Maintain adequate hydration throughout the day."
+            es: "Mantén una adecuada hidratación para favorecer el cuidado de tu voz.",
+            en: "Maintain adequate hydration to support healthy vocal function."
         },
         importancia: {
-            es: "Una adecuada hidratación puede contribuir al bienestar de las estructuras involucradas en la producción de la voz.",
-            en: "Adequate hydration can contribute to the well-being of the structures involved in voice production."
+            es: "La hidratación ayuda a mantener las mucosas de las vías respiratorias en buenas condiciones y puede favorecer una producción vocal más cómoda.",
+            en: "Hydration helps keep the mucous membranes of the respiratory tract in good condition and may support more comfortable voice production."
         },
         recomendacion: {
-            es: "Procura beber agua regularmente durante el día.",
-            en: "Try to drink water regularly throughout the day."
+            es: "Bebe agua de manera frecuente durante el día, especialmente cuando hables durante períodos prolongados.",
+            en: "Drink water regularly throughout the day, especially when speaking for extended periods."
         },
         consejo: {
-            es: "Lleva contigo una botella de agua para recordar mantener una hidratación adecuada.",
-            en: "Carry a bottle of water with you as a reminder to stay adequately hydrated."
+            es: "Ten una botella de agua cerca para recordar hidratarte durante tus actividades.",
+            en: "Keep a bottle of water nearby to remind yourself to stay hydrated during your activities."
         }
     },
 
@@ -29,25 +29,25 @@ const habits = [
         id: "descanso-vocal",
         nombre: {
             es: "Descanso vocal",
-            en: "Vocal rest"
+            en: "Vocal Rest"
         },
-        icono: "moon",
-        color: "sage",
+        icono: "volume-x",
+        color: "green",
         resumen: {
-            es: "Dale momentos de descanso a tu voz durante el día.",
-            en: "Give your voice moments of rest throughout the day."
+            es: "Permite que tu voz tenga momentos de descanso durante el día.",
+            en: "Allow your voice to have periods of rest throughout the day."
         },
         importancia: {
-            es: "Los momentos de descanso pueden ayudar a evitar el uso excesivo de la voz.",
-            en: "Periods of rest can help avoid excessive voice use."
+            es: "Los períodos de descanso vocal pueden ayudar a disminuir el esfuerzo producido por un uso prolongado de la voz.",
+            en: "Periods of vocal rest can help reduce the effort associated with prolonged voice use."
         },
         recomendacion: {
-            es: "Incluye pausas durante actividades que requieran un uso prolongado de la voz.",
-            en: "Include breaks during activities that require prolonged voice use."
+            es: "Alterna períodos de habla con momentos de silencio cuando tu actividad lo permita.",
+            en: "Alternate periods of speaking with moments of silence when your activity allows it."
         },
         consejo: {
-            es: "Organiza pequeños momentos de silencio cuando hayas utilizado mucho la voz.",
-            en: "Include short periods of silence after extensive voice use."
+            es: "Evita continuar hablando cuando sientas fatiga vocal.",
+            en: "Avoid continuing to speak when you feel vocal fatigue."
         }
     },
 
@@ -55,25 +55,25 @@ const habits = [
         id: "evitar-gritar",
         nombre: {
             es: "Evitar gritar",
-            en: "Avoid shouting"
+            en: "Avoid Shouting"
         },
-        icono: "volume-x",
+        icono: "megaphone-off",
         color: "pink",
         resumen: {
-            es: "Evita elevar excesivamente la voz.",
-            en: "Avoid raising your voice excessively."
+            es: "Evita gritar o elevar excesivamente la voz para comunicarte.",
+            en: "Avoid shouting or excessively raising your voice when communicating."
         },
         importancia: {
-            es: "Reducir el esfuerzo vocal puede favorecer un uso más saludable de la voz.",
-            en: "Reducing vocal effort can support healthier voice use."
+            es: "Hablar con una intensidad excesiva puede aumentar el esfuerzo sobre el sistema vocal.",
+            en: "Speaking at excessive intensity can increase the effort placed on the vocal system."
         },
         recomendacion: {
-            es: "Utiliza un volumen cómodo al comunicarte.",
-            en: "Use a comfortable volume when communicating."
+            es: "Acércate a la persona con la que deseas hablar en lugar de aumentar demasiado el volumen.",
+            en: "Move closer to the person you want to speak with instead of greatly increasing your volume."
         },
         consejo: {
-            es: "Si necesitas llamar a alguien, acércate en lugar de gritar.",
-            en: "If you need to call someone, move closer instead of shouting."
+            es: "Si hay mucho ruido ambiental, busca un lugar más tranquilo para conversar.",
+            en: "If there is a lot of background noise, find a quieter place to talk."
         }
     },
 
@@ -81,25 +81,25 @@ const habits = [
         id: "evitar-carraspear",
         nombre: {
             es: "Evitar carraspear",
-            en: "Avoid throat clearing"
+            en: "Avoid Throat Clearing"
         },
-        icono: "volume-2",
-        color: "turquoise",
+        icono: "circle-slash",
+        color: "purple",
         resumen: {
-            es: "Evita carraspear constantemente.",
-            en: "Avoid frequent throat clearing."
+            es: "Evita carraspear repetidamente durante el día.",
+            en: "Avoid repeatedly clearing your throat throughout the day."
         },
         importancia: {
-            es: "Carraspear repetidamente puede generar esfuerzo en las estructuras relacionadas con la producción de la voz.",
-            en: "Repeated throat clearing can create effort in structures involved in voice production."
+            es: "El carraspeo frecuente puede generar un contacto repetido entre las estructuras vocales.",
+            en: "Frequent throat clearing can cause repeated contact between the vocal structures."
         },
         recomendacion: {
-            es: "Cuando tengas la necesidad de carraspear, intenta beber agua.",
-            en: "When you feel the need to clear your throat, try drinking water."
+            es: "Cuando tengas ganas de carraspear, intenta tomar agua o realizar una deglución suave.",
+            en: "When you feel the urge to clear your throat, try drinking water or swallowing gently."
         },
         consejo: {
-            es: "Observa cuándo aparece este hábito y busca alternativas suaves.",
-            en: "Notice when this habit occurs and look for gentle alternatives."
+            es: "Presta atención a cuándo aparece el carraspeo para identificar situaciones que lo desencadenan.",
+            en: "Pay attention to when throat clearing occurs to identify situations that trigger it."
         }
     },
 
@@ -107,25 +107,25 @@ const habits = [
         id: "ambiente",
         nombre: {
             es: "Cuidado del ambiente",
-            en: "Environmental care"
+            en: "Environmental Care"
         },
         icono: "wind",
-        color: "sage",
+        color: "cyan",
         resumen: {
-            es: "Evita ambientes con humo, polvo o sustancias irritantes.",
-            en: "Avoid environments with smoke, dust, or irritants."
+            es: "Cuida las condiciones ambientales en las que utilizas tu voz.",
+            en: "Pay attention to the environmental conditions in which you use your voice."
         },
         importancia: {
-            es: "El ambiente puede influir en el bienestar de las vías respiratorias y de la voz.",
-            en: "The environment can influence the well-being of the respiratory system and voice."
+            es: "El humo, el polvo, los ambientes muy secos y otros irritantes pueden afectar el confort de las vías respiratorias.",
+            en: "Smoke, dust, very dry environments and other irritants may affect respiratory comfort."
         },
         recomendacion: {
-            es: "Procura mantenerte en espacios ventilados y libres de irritantes.",
-            en: "Try to stay in well-ventilated spaces free from irritants."
+            es: "Evita permanecer durante períodos prolongados en ambientes con humo o irritantes.",
+            en: "Avoid spending long periods in environments with smoke or irritants."
         },
         consejo: {
-            es: "Ventila los espacios cerrados y evita el humo cuando sea posible.",
-            en: "Ventilate enclosed spaces and avoid smoke whenever possible."
+            es: "Procura mantener espacios ventilados y agradables para respirar.",
+            en: "Try to keep spaces well ventilated and comfortable for breathing."
         }
     },
 
@@ -133,25 +133,25 @@ const habits = [
         id: "calentamiento",
         nombre: {
             es: "Calentamiento vocal",
-            en: "Vocal warm-up"
+            en: "Vocal Warm-up"
         },
         icono: "activity",
-        color: "blue",
+        color: "orange",
         resumen: {
-            es: "Realiza ejercicios de calentamiento vocal recomendados por un profesional.",
-            en: "Perform vocal warm-up exercises recommended by a professional."
+            es: "Realiza ejercicios suaves antes de actividades que requieran un uso prolongado de la voz.",
+            en: "Perform gentle exercises before activities that require prolonged voice use."
         },
         importancia: {
-            es: "El calentamiento vocal puede formar parte de una preparación adecuada para actividades de uso intensivo de la voz.",
-            en: "Vocal warm-up can be part of appropriate preparation for activities involving intensive voice use."
+            es: "Una preparación vocal adecuada puede ayudar a comenzar una actividad vocal de manera progresiva.",
+            en: "Appropriate vocal preparation can help begin vocal activities gradually."
         },
         recomendacion: {
-            es: "Realiza únicamente ejercicios adecuados para ti y recomendados profesionalmente.",
-            en: "Only perform exercises that are appropriate for you and professionally recommended."
+            es: "Utiliza ejercicios suaves y cómodos antes de cantar, hablar en público o realizar actividades vocales intensas.",
+            en: "Use gentle and comfortable exercises before singing, public speaking or intensive vocal activities."
         },
         consejo: {
-            es: "Si utilizas mucho la voz, consulta a un profesional de Fonoaudiología.",
-            en: "If you use your voice extensively, consult a Speech-Language Pathologist."
+            es: "El calentamiento no debe producir dolor ni molestias.",
+            en: "Warm-up exercises should not cause pain or discomfort."
         }
     },
 
@@ -161,23 +161,23 @@ const habits = [
             es: "Postura",
             en: "Posture"
         },
-        icono: "accessibility",
-        color: "pink",
+        icono: "person-standing",
+        color: "teal",
         resumen: {
-            es: "Mantén una postura corporal adecuada al hablar.",
-            en: "Maintain good body posture while speaking."
+            es: "Mantén una postura cómoda y equilibrada al hablar.",
+            en: "Maintain a comfortable and balanced posture while speaking."
         },
         importancia: {
-            es: "Una postura equilibrada puede favorecer una comunicación cómoda y eficiente.",
-            en: "Balanced posture can support comfortable and efficient communication."
+            es: "Una postura equilibrada puede facilitar una respiración y producción vocal más cómodas.",
+            en: "Balanced posture can support more comfortable breathing and voice production."
         },
         recomendacion: {
-            es: "Mantén el cuerpo relajado y evita posiciones que generen tensión innecesaria.",
-            en: "Keep your body relaxed and avoid positions that create unnecessary tension."
+            es: "Mantén la cabeza, cuello y espalda en una posición cómoda y evita tensiones innecesarias.",
+            en: "Keep your head, neck and back in a comfortable position and avoid unnecessary tension."
         },
         consejo: {
-            es: "Revisa tu postura cuando permanezcas sentado durante períodos prolongados.",
-            en: "Check your posture when sitting for prolonged periods."
+            es: "Si trabajas sentado, ajusta tu silla y pantalla para mantener una posición cómoda.",
+            en: "If you work sitting down, adjust your chair and screen to maintain a comfortable position."
         }
     },
 
@@ -185,77 +185,282 @@ const habits = [
         id: "volumen",
         nombre: {
             es: "Volumen adecuado",
-            en: "Appropriate volume"
+            en: "Appropriate Volume"
         },
-        icono: "volume-1",
-        color: "turquoise",
+        icono: "volume-2",
+        color: "indigo",
         resumen: {
-            es: "Utiliza un volumen cómodo y evita forzar la voz.",
-            en: "Use a comfortable volume and avoid straining your voice."
+            es: "Utiliza un volumen de voz adecuado para cada situación.",
+            en: "Use an appropriate speaking volume for each situation."
         },
         importancia: {
-            es: "Un volumen adecuado puede ayudar a disminuir el esfuerzo vocal innecesario.",
-            en: "An appropriate volume can help reduce unnecessary vocal effort."
+            es: "Mantener un volumen adecuado ayuda a evitar un esfuerzo vocal innecesario.",
+            en: "Maintaining an appropriate volume helps avoid unnecessary vocal effort."
         },
         recomendacion: {
-            es: "Habla con un volumen que permita comunicarte sin forzar la voz.",
-            en: "Speak at a volume that allows communication without straining your voice."
+            es: "Habla con una intensidad que permita que los demás te escuchen sin necesidad de forzar la voz.",
+            en: "Speak at an intensity that allows others to hear you without forcing your voice."
         },
         consejo: {
-            es: "En ambientes ruidosos, busca acercarte a la persona en lugar de elevar demasiado la voz.",
-            en: "In noisy environments, move closer to the person instead of raising your voice excessively."
+            es: "En lugares ruidosos, intenta reducir el ruido ambiental en lugar de competir con él.",
+            en: "In noisy places, try to reduce background noise instead of competing with it."
         }
     },
 
     {
         id: "descanso",
         nombre: {
-            es: "Descanso",
-            en: "Rest"
+            es: "Descanso general",
+            en: "General Rest"
         },
-        icono: "bed",
-        color: "sage",
+        icono: "moon",
+        color: "rose",
         resumen: {
-            es: "Mantén buenos hábitos de descanso.",
-            en: "Maintain healthy rest habits."
+            es: "Mantén una rutina adecuada de descanso y sueño.",
+            en: "Maintain an adequate rest and sleep routine."
         },
         importancia: {
-            es: "El descanso general forma parte del bienestar y puede contribuir al cuidado integral de la voz.",
-            en: "Overall rest is part of well-being and can contribute to comprehensive voice care."
+            es: "El descanso general contribuye al bienestar y puede influir en cómo afrontamos las actividades que requieren uso vocal.",
+            en: "General rest contributes to well-being and may influence how we handle activities that require voice use."
         },
         recomendacion: {
-            es: "Procura mantener horarios de descanso regulares.",
-            en: "Try to maintain regular rest schedules."
+            es: "Procura mantener horarios de descanso regulares y suficientes.",
+            en: "Try to maintain regular and sufficient rest periods."
         },
         consejo: {
-            es: "Organiza tu rutina para reservar tiempo suficiente para descansar.",
-            en: "Organize your routine to allow enough time for rest."
+            es: "Organiza tus actividades para evitar acumular cansancio durante varios días.",
+            en: "Organize your activities to avoid accumulating fatigue over several days."
         }
     },
 
     {
         id: "pausas",
         nombre: {
-            es: "Pausas durante el habla",
-            en: "Speaking breaks"
+            es: "Pausas al hablar",
+            en: "Speaking Breaks"
         },
         icono: "pause-circle",
-        color: "blue",
+        color: "mint",
         resumen: {
-            es: "Realiza pausas durante períodos prolongados de uso de la voz.",
-            en: "Take breaks during prolonged periods of voice use."
+            es: "Realiza pausas durante períodos prolongados de conversación.",
+            en: "Take breaks during extended periods of speaking."
         },
         importancia: {
-            es: "Las pausas permiten alternar los períodos de actividad vocal con momentos de descanso.",
-            en: "Breaks allow periods of vocal activity to alternate with moments of rest."
+            es: "Las pausas permiten interrumpir períodos prolongados de uso vocal y reducir el esfuerzo acumulado.",
+            en: "Breaks interrupt prolonged periods of voice use and can reduce accumulated effort."
         },
         recomendacion: {
-            es: "Incluye pequeñas pausas cuando hables durante períodos prolongados.",
-            en: "Include short breaks when speaking for extended periods."
+            es: "Si debes hablar durante mucho tiempo, incorpora pequeños momentos de silencio.",
+            en: "If you need to speak for a long time, include short moments of silence."
         },
         consejo: {
-            es: "Planifica pausas especialmente durante clases, exposiciones o jornadas de trabajo con alta demanda vocal.",
-            en: "Plan breaks especially during classes, presentations, or workdays with high vocal demand."
+            es: "Aprovecha los cambios de actividad para descansar unos minutos la voz.",
+            en: "Use changes between activities as opportunities to rest your voice for a few minutes."
         }
     }
 ];
+
+function getHabitById(id) {
+    return habits.find(habit => habit.id === id);
+}
+
+function getHabitText(habit, field) {
+    return habit[field][currentLanguage];
+}
+
+function renderHabitsPage() {
+
+    const habitsList = document.getElementById("habitsList");
+    const habitDetail = document.getElementById("habitDetail");
+
+    if (!habitsList || !habitDetail) {
+        return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const habitId = params.get("habit");
+
+    if (habitId) {
+        renderHabitDetail(habitId);
+        return;
+    }
+
+    renderHabitCards();
+}
+
+function renderHabitCards() {
+
+    const habitsList = document.getElementById("habitsList");
+    const habitDetail = document.getElementById("habitDetail");
+
+    habitsList.style.display = "grid";
+    habitDetail.style.display = "none";
+
+    habitsList.innerHTML = habits.map(habit => {
+
+        return `
+            <article class="habit-card ${habit.color}">
+
+                <div class="habit-card-icon">
+                    <i data-lucide="${habit.icono}"></i>
+                </div>
+
+                <div class="habit-card-content">
+
+                    <h3>
+                        ${habit.nombre[currentLanguage]}
+                    </h3>
+
+                    <p>
+                        ${habit.resumen[currentLanguage]}
+                    </p>
+
+                    <a
+                        href="habitos.html?habit=${habit.id}"
+                        class="habit-more-button ${habit.color}"
+                    >
+                        <span data-i18n="seeMore">
+                            ${translations[currentLanguage].seeMore}
+                        </span>
+
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+        `;
+
+    }).join("");
+
+    lucide.createIcons();
+}
+
+function renderHabitDetail(habitId) {
+
+    const habit = getHabitById(habitId);
+
+    const habitsList = document.getElementById("habitsList");
+    const habitDetail = document.getElementById("habitDetail");
+
+    if (!habit) {
+        renderHabitCards();
+        return;
+    }
+
+    habitsList.style.display = "none";
+    habitDetail.style.display = "block";
+
+    habitDetail.innerHTML = `
+
+        <div class="detail-back-container">
+
+            <a href="habitos.html" class="back-button">
+
+                <i data-lucide="arrow-left"></i>
+
+                <span>
+                    ${translations[currentLanguage].backToHabits}
+                </span>
+
+            </a>
+
+        </div>
+
+        <article class="habit-detail-card ${habit.color}">
+
+            <div class="habit-detail-hero">
+
+                <div class="habit-detail-icon">
+                    <i data-lucide="${habit.icono}"></i>
+                </div>
+
+                <div>
+
+                    <span class="detail-label">
+                        ${translations[currentLanguage].vocalCare}
+                    </span>
+
+                    <h2>
+                        ${habit.nombre[currentLanguage]}
+                    </h2>
+
+                    <p>
+                        ${habit.resumen[currentLanguage]}
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="habit-detail-body">
+
+                <section class="detail-section">
+
+                    <div class="detail-section-icon">
+                        <i data-lucide="heart-pulse"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            ${translations[currentLanguage].importance}
+                        </h3>
+
+                        <p>
+                            ${habit.importancia[currentLanguage]}
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="detail-section">
+
+                    <div class="detail-section-icon">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            ${translations[currentLanguage].recommendation}
+                        </h3>
+
+                        <p>
+                            ${habit.recomendacion[currentLanguage]}
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="detail-tip">
+
+                    <div class="detail-tip-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            ${translations[currentLanguage].tip}
+                        </h3>
+
+                        <p>
+                            ${habit.consejo[currentLanguage]}
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </article>
+    `;
+
+    lucide.createIcons();
+}
+
+document.addEventListener("DOMContentLoaded", renderHabitsPage);
