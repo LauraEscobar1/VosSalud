@@ -4,214 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VozSalud | Hábitos</title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif']
-                    },
-                    colors: {
-                        voz: {
-                            blue: '#2F6685',
-                            lightBlue: '#DCEEF7',
-                            sage: '#DDEDE8',
-                            turquoise: '#68A9A6',
-                            pink: '#F8DDE5',
-                            softPink: '#EFA6BA',
-                            background: '#F8FAFA',
-                            text: '#123B52',
-                            secondary: '#5F7480'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <title>VozSalud - Hábitos</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="css/styles.css">
-
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body class="bg-voz-background text-voz-text font-sans">
+<body>
 
-    <div class="min-h-screen flex">
+<div class="app-container">
 
-        <aside
-            class="sidebar w-64 bg-white border-r border-slate-100 flex flex-col px-5 py-7"
-        >
+    <aside class="sidebar" id="sidebar">
 
-            <div class="mb-10 px-2">
+        <div class="brand">
 
-                <a href="index.html" class="block">
-
-                    <h1 class="text-2xl font-bold text-voz-text">
-                        VozSalud
-                    </h1>
-
-                    <p class="text-xs text-voz-secondary mt-1">
-                        Cuidado y bienestar vocal
-                    </p>
-
-                </a>
-
+            <div class="brand-icon">
+                <i data-lucide="mic-2"></i>
             </div>
 
-            <nav class="flex-1">
+            <div>
+                <h1>VozSalud</h1>
+                <span data-i18n="appSubtitle">Cuidado vocal</span>
+            </div>
 
-                <p
-                    class="text-[11px] uppercase tracking-wider font-semibold text-slate-400 px-3 mb-3"
-                >
-                    Menú
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="nav-item">
+                <i data-lucide="calendar-days"></i>
+                <span data-i18n="calendar">Calendario</span>
+            </a>
+
+            <a href="habitos.html" class="nav-item active">
+                <i data-lucide="heart-pulse"></i>
+                <span data-i18n="habits">Hábitos</span>
+            </a>
+
+            <a href="informacion.html" class="nav-item">
+                <i data-lucide="info"></i>
+                <span data-i18n="information">Información</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="language-box">
+                <i data-lucide="languages"></i>
+
+                <select id="languageSelector">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+            <div class="sidebar-footer">
+                <span data-i18n="footerText">Bienestar y cuidado de tu voz</span>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="mobile-header">
+
+            <button class="mobile-menu-button" id="mobileMenuButton">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="mobile-brand">
+                <i data-lucide="mic-2"></i>
+                <span>VozSalud</span>
+            </div>
+
+        </header>
+
+        <section class="page-header habits-page-header">
+
+            <div>
+
+                <span class="eyebrow" data-i18n="habitsEyebrow">
+                    Cuidado diario
+                </span>
+
+                <h2 id="habitsPageTitle" data-i18n="habitsTitle">
+                    Hábitos para cuidar tu voz
+                </h2>
+
+                <p id="habitsPageDescription" data-i18n="habitsDescription">
+                    Conoce prácticas sencillas que pueden ayudarte a mantener una buena higiene vocal.
                 </p>
 
-                <div class="space-y-2">
-
-                    <a
-                        href="index.html"
-                        class="nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
-                    >
-                        <i data-lucide="calendar-days" class="w-5 h-5"></i>
-                        <span>Calendario</span>
-                    </a>
-
-                    <a
-                        href="habitos.html"
-                        class="nav-item active flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
-                    >
-                        <i data-lucide="lightbulb" class="w-5 h-5"></i>
-                        <span>Hábitos</span>
-                    </a>
-
-                    <a
-                        href="informacion.html"
-                        class="nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium"
-                    >
-                        <i data-lucide="info" class="w-5 h-5"></i>
-                        <span>Información</span>
-                    </a>
-
-                </div>
-
-            </nav>
-
-        </aside>
-
-
-        <main class="flex-1 min-w-0">
-
-            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-8 lg:py-10">
-
-                <header class="mb-9">
-
-                    <p
-                        class="text-sm font-medium text-voz-turquoise mb-2"
-                    >
-                        Bienestar vocal
-                    </p>
-
-                    <h2
-                        class="text-3xl sm:text-4xl font-bold tracking-tight text-voz-text"
-                    >
-                        Hábitos saludables
-                    </h2>
-
-                    <p
-                        class="text-sm sm:text-base text-voz-secondary mt-2 max-w-2xl"
-                    >
-                        Pequeñas acciones para cuidar tu voz todos los días.
-                    </p>
-
-                </header>
-
-
-                <section
-                    id="habitsGrid"
-                    class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"
-                >
-                </section>
-
             </div>
 
-        </main>
+        </section>
 
-    </div>
+        <section id="habitsList" class="habits-grid"></section>
 
+        <section id="habitDetail" class="habit-detail" style="display: none;"></section>
 
-    <script src="js/habitos.js"></script>
+    </main>
 
-    <script>
-        function renderHabits() {
+</div>
 
-            const grid =
-                document.getElementById("habitsGrid");
+<script src="js/idiomas.js"></script>
+<script src="js/habitos.js"></script>
+<script src="js/app.js"></script>
 
-            habits.forEach((habit) => {
-
-                const card =
-                    document.createElement("article");
-
-                card.className =
-                    "bg-white border border-slate-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all duration-200";
-
-                card.innerHTML = `
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-voz-lightBlue flex items-center justify-center mb-5"
-                    >
-                        <i
-                            data-lucide="${habit.icono}"
-                            class="w-7 h-7 text-voz-blue"
-                        ></i>
-                    </div>
-
-                    <h3
-                        class="text-lg font-bold text-voz-text"
-                    >
-                        ${habit.nombre.es}
-                    </h3>
-
-                    <p
-                        class="text-sm text-voz-secondary leading-relaxed mt-2 min-h-[60px]"
-                    >
-                        ${habit.resumen.es}
-                    </p>
-
-                    <a
-                        href="habitos.html?habit=${habit.id}"
-                        class="inline-flex items-center justify-center gap-2 mt-5 min-h-10 px-4 py-2 rounded-xl bg-voz-sage text-voz-blue text-sm font-semibold hover:bg-voz-lightBlue transition-colors"
-                    >
-                        Ver más
-                        <i
-                            data-lucide="arrow-right"
-                            class="w-4 h-4"
-                        ></i>
-                    </a>
-                `;
-
-                grid.appendChild(card);
-            });
-
-            lucide.createIcons();
-        }
-
-        document.addEventListener(
-            "DOMContentLoaded",
-            renderHabits
-        );
-    </script>
+<script>
+    lucide.createIcons();
+</script>
 
 </body>
 </html>
